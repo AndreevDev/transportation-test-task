@@ -37,3 +37,44 @@
     transform: translateY(0px);
   }
 }
+
+.table-wrapper {
+  position: relative;
+  width: 50%;
+}
+
+.ant-layout-header {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.ant-layout-content {
+  width: 100%;
+  display: flex;
+}
+
+.ant-table-content {
+  overflow-x: scroll;
+}
+
+[class="ant-table-cell"] {
+  min-width: 150px;
+}
+
+.leaflet-container {
+  width: 50%;
+  height: calc(100vh - 64px);
+  flex: 1 1 0;
+}
+
+#draghandle {
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  transform: translate(50%, 50%);
+  width: 15px;
+  height: 35px;
+  z-index: 999;
+  cursor: col-resize;
+}

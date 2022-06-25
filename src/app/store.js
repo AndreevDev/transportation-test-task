@@ -1,8 +1,12 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import requestListReducer from '../features/requestList/requestListSlice';
+import addressesReducer from '../features/requestList/addressesSlice';
+import requestMapReducer from '../features/requestMap/requestMapSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    requestList: requestListReducer,
+    addresses: addressesReducer,
+    requestMap: requestMapReducer
   },
 });
